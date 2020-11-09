@@ -1,0 +1,12 @@
+#bg{
+    font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
+    background-image: url('../../../assets/bgg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;  
+}
+#page{
+    color: whitesmoke;
+    padding-top: 20%;
+}
