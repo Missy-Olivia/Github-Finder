@@ -1,2 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css" ;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+body{
+    background-image: url('./assets/bgg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;  
+}
+#page{
+    margin-top: 20%;
+    color: whitesmoke;
+    font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
+}
