@@ -72,3 +72,10 @@
     font-family: 'Source Code Pro', monospace;
     text-decoration: underline;
   }
+  body{
+    background-image: url('../../assets/pexels-lumn-311039.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
