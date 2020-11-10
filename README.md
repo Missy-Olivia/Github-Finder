@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This is angular cli application that is meant to help search different users and repositories rom github
 
 ## Live Page 
-https://missy-olivia.github.io/Quotes.io/ <br>
+https://missy-olivia.github.io/Github-Finder.io/ <br>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 ## Technologies Used
 
