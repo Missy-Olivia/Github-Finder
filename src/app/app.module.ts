@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { UserDirective } from './user.directive';
 import { TimePipe } from './time.pipe';
 import { from } from 'rxjs';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { from } from 'rxjs';
     LandingComponent,
     ProfileComponent,
     UserDirective,
-    TimePipe
+    TimePipe,
+    UserComponent
   ],
   imports: [
     BrowserModule,
