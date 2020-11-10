@@ -66,4 +66,9 @@
   input[type=text]:focus {
     width: 100%;
   }
-  
+  #dark{
+    color: black;
+    font-size: 4em;
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: underline;
+  }

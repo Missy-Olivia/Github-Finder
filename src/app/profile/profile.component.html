@@ -6,15 +6,19 @@
             <div class="col-md-6 offset-md-2">
 
     <form (keyup)="findProfile()" #userForm="ngForm">
-      <div class="form-group">
-          <input type="text" placeholder="Search Repositories" [(ngModel)]="userName" name="userName">
+      <div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" [(ngModel)]="userName" name="userName" type="search" placeholder="Search Repo" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <h1  id="dark" class= " text-center" >Repositories</h1>
+
       </div>
   </form>
             </div>
           </div>
                 <div  *ngIf="profileService.newRepo">
-                <h1>Repositories</h1>
-      <div class="row m-0 p-ocol-container">
+                    <div class="row m-0 p-ocol-container">
           <div class="col-container col-md-4 col card mb-5" *ngFor='let repository of profileService.newRepo'>
               <div class="card-header">
                   <a href="{{repository.html_url}}" target="_blank" >{{repository.name}}</a>
