@@ -1,5 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { ProfileService } from '../profile.service';
+import { Injectable } from '@angular/core';
+import { Users } from '../users';
+import { Repository } from '../repository';
+import { HttpClient } from '@angular/common/http';
+import{ FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -7,9 +12,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+  user: Users;
+  repos: Repository;
+  userRepos: any;
+  userName: string;
 
-  ngOnInit(): void {
+  constructor(private profileService: ProfileService) { 
+
+  }
+  findProfile() {
+
+    this.profileService.updateProfile(this.userName);
+ 
+    this.profileService.getUserInfo();
+    this.user = this.profileService.user;
+   console.log(this.user);
+ 
+    this.profileService.getRepoInfo(this.userName);
+    this.userRepos = this.profileService.newRepo;
+  }
+
+  ngOnInit(){
+    this.profileService.getRepoInfo(this.userName);
+    this.repos = this.profileService.repo;
+    this.profileService.getUserInfo();
+    this.user = this.profileService.user;
   }
 
 }
