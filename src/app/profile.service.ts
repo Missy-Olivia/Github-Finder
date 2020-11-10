@@ -12,11 +12,11 @@ export class ProfileService {
   repo: Repository;
   newRepo: any;
   newUser: any;
-  private userName: string;
+  public userName: string;
 
-  private accessToken = '2e1a2eea7ba2f6734a41ab92e251f22a9595cd70';
+  public accessToken = '2e1a2eea7ba2f6734a41ab92e251f22a9595cd70';
 
-  constructor(private http: HttpClient) {
+  constructor(public http: HttpClient) {
     this.user = new Users ('', '', '', '', '','','','','',new Date);
     this.repo = new Repository('', '', '');
     console.log('Service Works!');

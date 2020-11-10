@@ -17,7 +17,7 @@ export class UserComponent implements OnInit {
   userRepos: any;
   userName: string;
 
-  constructor(private profileService: ProfileService) { 
+  constructor(public profileService: ProfileService) { 
 
   }
   findProfile() {
