@@ -5,6 +5,7 @@ import { ProfileComponent } from '../profile/profile.component';
 import { UserComponent } from '../user/user.component'
 import { CommonModule } from '@angular/common';
 
+
 const routes: Routes = [
   {path: '', component: LandingComponent},
   {path: 'user/repositories?', component: ProfileComponent},
