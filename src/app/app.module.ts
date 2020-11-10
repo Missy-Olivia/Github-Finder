@@ -7,7 +7,7 @@ import { LandingComponent } from './landing-page/landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserDirective } from './user.directive';
 import { TimePipe } from './time.pipe';
-import { from } from 'rxjs';
+import { FormsModule } from '@angular/forms';
 import { UserComponent } from './user/user.component';
 
 @NgModule({
@@ -23,6 +23,7 @@ import { UserComponent } from './user/user.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
