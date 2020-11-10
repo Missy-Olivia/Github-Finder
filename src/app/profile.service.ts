@@ -37,7 +37,7 @@ export class ProfileService {
      }
      const promise = new Promise(((resolve, reject) => {
       this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName +
-      '?access_token=' + environment.apiUrl)
+      '?access_token=' + this.accessToken)
       .toPromise().then(response =>{
         this.user.login = response.login;
         this.user.avatar_url = response.avatar_url;
@@ -69,7 +69,7 @@ getRepoInfo(username) {
   }
 
   const promise = new Promise(( (resolve, reject) => {
-    this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName + '/repos?access_token=' + environment.apiUrl)
+    this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName + '/repos?access_token=' + this.accessToken)
     .toPromise()
     .then(response_repo => {
       this.newRepo = response_repo;
