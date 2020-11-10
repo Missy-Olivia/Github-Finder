@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This is angular cli application that is meant to help search different users and repositories rom github
+This is angular cli application that is meant to help search different users and repositories from github.
 
 ## Live Page 
 https://missy-olivia.github.io/Github-Finder.io/ <br>
